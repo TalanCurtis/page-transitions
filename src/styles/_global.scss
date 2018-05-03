@@ -55,3 +55,82 @@ h6 {
         font-weight: bold;
     }
 }
+
+.Card{
+    height: 100px;
+    width: 100px;
+    background: rgb(231, 152, 231);
+    margin: 10px;
+}
+
+
+// transition
+.fade-enter {
+    // opacity: 0.01;
+    position: absolute;
+    // transform: translateX(0px);
+    animation-name: enter;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;	
+	animation-direction: normal;
+	animation-delay: 0;
+	animation-play-state: running;
+	animation-fill-mode: forwards;
+  }
+  .fade-enter-active {
+    // opacity: 1;
+  }
+  .fade-exit {
+    // opacity: 1;
+    animation-name: exit;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;	
+	animation-direction: normal;
+	animation-delay: 0;
+	animation-play-state: running;
+	animation-fill-mode: forwards;
+  }
+  .fade-exit-active {
+    // opacity: 0.01;
+    // transition: opacity 500ms ease-in;
+  }
+  
+  @keyframes enter {
+    0% {
+        opacity: 0;
+	}
+	
+	40% {
+		opacity: 0;
+	}
+
+	60% {
+		opacity: 0;;
+	}
+
+	100% {
+        opacity: 1;
+	}
+
+  }
+  @keyframes exit {
+    0% {
+        opacity: 1;
+	}
+	
+	40% {
+		opacity: 0;
+	}
+
+	80% {
+		opacity: 0;
+	}
+
+	100% {
+        opacity: 0;
+        // transform: translateX(0px);
+	}
+
+  }
